@@ -26,7 +26,7 @@
 #include "libavutil/common.h"
 #include "libavutil/internal.h"
 
-static const AVCodecDescriptor codec_descriptors[] = {
+const AVCodecDescriptor codec_descriptors[] = {
     /* video codecs */
     {
         .id        = AV_CODEC_ID_MPEG1VIDEO,
