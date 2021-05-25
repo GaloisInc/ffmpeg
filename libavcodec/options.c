@@ -74,7 +74,7 @@ static AVClassCategory get_category(void *ptr)
     else                                     return AV_CLASS_CATEGORY_ENCODER;
 }
 
-static const AVClass av_codec_context_class = {
+const AVClass av_codec_context_class = {
     .class_name              = "AVCodecContext",
     .item_name               = context_to_name,
     .option                  = options,

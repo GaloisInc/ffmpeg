@@ -538,7 +538,7 @@ static const AVOption options[] = {
     { NULL },
 };
 
-static const AVClass decoder_class = {
+const AVClass gif_decoder_class = {
     .class_name = "gif decoder",
     .item_name  = av_default_item_name,
     .option     = options,
@@ -556,5 +556,5 @@ AVCodec ff_gif_decoder = {
     .decode         = gif_decode_frame,
     .capabilities   = CODEC_CAP_DR1,
     .long_name      = NULL_IF_CONFIG_SMALL("GIF (Graphics Interchange Format)"),
-    .priv_class     = &decoder_class,
+    .priv_class     = &gif_decoder_class,
 };
